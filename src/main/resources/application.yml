@@ -1,3 +1,8 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /api/echo-ai
+
 spring:
   application:
     name: gsphere-echo-ai
@@ -14,5 +19,3 @@ spring.ai:
       password: ${REDIS_PASSWORD}
       initialize-schema: true
       ssl: true
-
-
