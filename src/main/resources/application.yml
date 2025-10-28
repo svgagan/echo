@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gsphere-echo-ai
+
+spring.ai:
+  openai:
+    api-key: ${OPENAI_API_KEY}
+    temperature: 0.3
+    model: gpt-3.5-turbo
+  vectorstore:
+    redis:
+      uri: ${REDIS_URI}
+      user: default
+      password: ${REDIS_PASSWORD}
+      initialize-schema: true
+      ssl: true
+
+
